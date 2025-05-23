@@ -9,7 +9,7 @@ defineConfig({
   name: 'Word Guesser',
   entry: 'index.html',
   height: 'tall',
-  menu: { enable: false }
+  menu: { enable: false },
   // TODO: Cannot use without ability to pass in more metadata
   // menu: {
   //   enable: true,

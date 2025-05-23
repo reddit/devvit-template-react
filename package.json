@@ -19,12 +19,12 @@
     "type-check": "tsc --build"
   },
   "dependencies": {
-    "@devvit/client": "next",
-    "@devvit/public-api": "next",
-    "@devvit/server": "next",
+    "@devvit/client": "0.11.16-next-2025-05-19-1403da2a7.0",
+    "@devvit/public-api": "0.11.16-next-2025-05-19-1403da2a7.0",
+    "@devvit/server": "0.11.16-next-2025-05-19-1403da2a7.0",
     "@tweenjs/tween.js": "18.6.4",
     "clsx": "2.1.1",
-    "devvit": "next",
+    "devvit": "0.11.16-next-2025-05-19-1403da2a7.0",
     "express": "5.1.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",
