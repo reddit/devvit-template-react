@@ -23,7 +23,7 @@ const router = express.Router();
 router.get<{ postId: string }, InitResponse | { status: string; message: string }>(
   '/api/init',
   async (req, res): Promise<void> => {
-    const { postId } = req.devvit;
+    const { postId, redis } = req.devvit;
 
     if (!postId) {
       console.error('API Init Error: postId not found in devvit context');
@@ -35,11 +35,11 @@ router.get<{ postId: string }, InitResponse | { status: string; message: string 
     }
 
     try {
-      let config = await postConfigMaybeGet({ postId });
+      let config = await postConfigMaybeGet({ redis, postId });
       if (!config || !config.wordOfTheDay) {
         console.log(`No valid config found for post ${postId}, creating new one.`);
-        await postConfigNew({ postId });
-        config = await postConfigGet({ postId });
+        await postConfigNew({ ctx: req.devvit, postId });
+        config = await postConfigGet({ redis, postId });
       }
 
       if (!config.wordOfTheDay) {
@@ -66,7 +66,7 @@ router.post<{ postId: string }, CheckResponse, { guess: string }>(
   '/api/check',
   async (req, res): Promise<void> => {
     const { guess } = req.body;
-    const { postId, userId } = req.devvit;
+    const { postId, userId, redis } = req.devvit;
 
     if (!postId) {
       res.status(400).json({ status: 'error', message: 'postId is required' });
@@ -81,7 +81,7 @@ router.post<{ postId: string }, CheckResponse, { guess: string }>(
       return;
     }
 
-    const config = await postConfigGet({ postId });
+    const config = await postConfigGet({ redis, postId });
     const { wordOfTheDay } = config;
 
     const normalizedGuess = guess.toLowerCase();
