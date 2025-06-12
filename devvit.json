@@ -13,6 +13,7 @@
   "server": {
     "entry": "dist/server/index.cjs"
   },
+  "media": {},
   "blocks": {
     "entry": "src/devvit/main.tsx"
   }
