@@ -22,10 +22,10 @@
     "type-check": "tsc --build"
   },
   "dependencies": {
-    "@devvit/public-api": "0.11.20-next-2025-07-24-17-36-25-fcf4a28f3.0",
-    "@devvit/web": "^0.11.20-next-2025-07-28-16-01-22-733d40e04.0",
+    "@devvit/public-api": "^0.11.20-next-2025-07-28-21-05-32-e67a64bd1.0",
+    "@devvit/web": "^0.11.20-next-2025-07-28-21-05-32-e67a64bd1.0",
     "clsx": "2.1.1",
-    "devvit": "^0.11.20-next-2025-07-28-16-01-22-733d40e04.0",
+    "devvit": "^0.11.20-next-2025-07-28-21-05-32-e67a64bd1.0",
     "express": "5.1.0",
     "react": "19.1.0",
     "react-dom": "19.1.0",

@@ -26,5 +26,8 @@
   },
   "triggers": {
     "onAppInstall": "/internal/on-app-install"
+  },
+  "dev": {
+    "subreddit": "test_runas_zz_dev"
   }
 }
