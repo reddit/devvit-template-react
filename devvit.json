@@ -1,6 +1,6 @@
 {
   "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
-  "name": "<% name %>",
+  "name": "test-runas-zz",
   "post": {
     "dir": "dist/client",
     "entrypoints": {

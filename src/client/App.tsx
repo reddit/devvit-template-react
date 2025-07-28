@@ -1,4 +1,4 @@
-import { navigateTo } from '@devvit/client';
+import { navigateTo } from '@devvit/web/client';
 import { useCounter } from './hooks/useCounter';
 
 export const App = () => {
