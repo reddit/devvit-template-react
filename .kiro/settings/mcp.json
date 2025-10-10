@@ -5,7 +5,9 @@
       "args": [
         "-y",
         "@devvit/mcp"
-      ]      
+      ],
+      "disabled": false,
+      "disabledTools": []
     }
   }
 }
