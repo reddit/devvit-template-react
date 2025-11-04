@@ -7,10 +7,6 @@ export const createPost = async () => {
   }
 
   return await reddit.submitCustomPost({
-    postData: {
-      gameState: 'initial',
-      score: 0,
-    },
     subredditName: subredditName,
     title: '<% name %>',
   });
