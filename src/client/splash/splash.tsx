@@ -3,7 +3,7 @@ import { context, requestExpandedMode } from '@devvit/web/client';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 
-import './splash.css';
+import '../index.css';
 
 export const Splash = () => {
   return (
