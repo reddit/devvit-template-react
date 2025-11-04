@@ -9,6 +9,10 @@ export default defineConfig({
     outDir: '../../dist/client',
     sourcemap: true,
     rollupOptions: {
+      input: {
+        splash: 'splash/splash.html',
+        default: 'index.html',
+      },
       output: {
         entryFileNames: '[name].js',
         chunkFileNames: '[name].js',
