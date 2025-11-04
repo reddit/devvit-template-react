@@ -14,8 +14,9 @@ export const Splash = () => {
           Hey {context.username ?? 'user'} 👋
         </h1>
         <p className="text-base text-center text-gray-600 ">
-          Edit <span className="bg-[#e5ebee]  px-1 py-0.5 rounded">src/client/App.tsx</span> to get
-          started.
+          Edit{' '}
+          <span className="bg-[#e5ebee]  px-1 py-0.5 rounded">src/client/splash/splash.tsx</span> to
+          get started.
         </p>
       </div>
       <div className="flex items-center justify-center mt-5">
