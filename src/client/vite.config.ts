@@ -7,7 +7,7 @@ export default defineConfig({
   plugins: [react(), tailwind()],
   build: {
     outDir: '../../dist/client',
-    emptyOutDir: true,
+    emptyOutDir: false,
     sourcemap: true,
     rollupOptions: {
       input: {
