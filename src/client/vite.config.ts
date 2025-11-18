@@ -5,6 +5,7 @@ import react from '@vitejs/plugin-react';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwind()],
+  logLevel: 'warn',
   build: {
     outDir: '../../dist/client',
     emptyOutDir: true,
