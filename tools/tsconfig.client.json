@@ -8,5 +8,5 @@
   },
   "include": ["../src/client/**/*", "../src/shared/**/*"],
   "exclude": ["../src/server/**/*", "../dist"],
-  "references": [{ "path": "./tsconfig.server.json" }]
+  "references": []
 }
