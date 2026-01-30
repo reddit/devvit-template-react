@@ -1,3 +1,7 @@
+import '../index.css';
+
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import { navigateTo } from '@devvit/web/client';
 import { useCounter } from '../hooks/useCounter';
 
@@ -66,3 +70,9 @@ export const App = () => {
     </div>
   );
 };
+
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>
+);
