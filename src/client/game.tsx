@@ -21,7 +21,7 @@ export const App = () => {
         <p className="text-base text-center text-gray-600 ">
           Edit{' '}
           <span className="bg-[#e5ebee]  px-1 py-0.5 rounded">
-            src/client/game/App.tsx
+            src/client/game.tsx
           </span>{' '}
           to get started.
         </p>

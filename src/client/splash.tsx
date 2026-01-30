@@ -20,7 +20,7 @@ export const Splash = () => {
         <p className="text-base text-center text-gray-600 ">
           Edit{' '}
           <span className="bg-[#e5ebee]  px-1 py-0.5 rounded">
-            src/client/splash/splash.tsx
+            src/client/splash.tsx
           </span>{' '}
           to get started.
         </p>
