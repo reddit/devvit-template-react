@@ -1,6 +1,6 @@
 {
   "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
-  "name": "llkmlmrf33",
+  "name": "<% name %>",
   "post": {
     "dir": "dist/client",
     "entrypoints": {
@@ -44,8 +44,5 @@
   "scripts": {
     "dev": "vite build --watch",
     "build": "vite build"
-  },
-  "dev": {
-    "subreddit": "llkmlmrf33_dev"
   }
 }
