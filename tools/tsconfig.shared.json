@@ -11,11 +11,5 @@
   },
   // https://github.com/Microsoft/TypeScript/issues/25636
   "include": ["../src/shared/**/*"],
-  "exclude": [
-    "../src/server",
-    "../src/server/**/*",
-    "../src/client",
-    "../src/client/**/*",
-    "../dist"
-  ]
+  "exclude": ["../src/server/**/*", "../src/client/**/*", "../dist"]
 }

@@ -7,13 +7,6 @@
     "exactOptionalPropertyTypes": false,
     "rootDir": ".."
   },
-  "include": [
-    "../src/server/**/*",
-    "../src/shared/**/*",
-    "../src/transformer.ts",
-    "../src/global.d.ts",
-    "../vite.config.ts",
-    "../vitest.config.ts"
-  ],
+  "include": ["../src/server/**/*", "../src/shared/**/*", "../vite.config.ts"],
   "exclude": ["../dist"]
 }
