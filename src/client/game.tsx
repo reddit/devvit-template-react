@@ -3,7 +3,7 @@ import '../index.css';
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { navigateTo } from '@devvit/web/client';
-import { useCounter } from '../hooks/useCounter';
+import { useCounter } from './hooks/useCounter';
 
 export const App = () => {
   const { count, username, loading, increment, decrement } = useCounter();
