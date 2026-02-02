@@ -7,7 +7,7 @@
   "scripts": {
     "build": "vite build",
     "deploy": "npm run type-check && npm run lint && npm run test && devvit upload",
-    "dev": "devvit playtest --verbose",
+    "dev": "devvit playtest",
     "launch": "npm run deploy && devvit publish",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "login": "devvit login",
