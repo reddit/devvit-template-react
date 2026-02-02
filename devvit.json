@@ -39,7 +39,7 @@
     "exampleForm": "/internal/form/example-submit"
   },
   "triggers": {
-    "onAppInstall": "/internal/on-app-install"
+    "onAppInstall": "/internal/triggers/on-app-install"
   },
   "scripts": {
     "dev": "vite build --watch",
