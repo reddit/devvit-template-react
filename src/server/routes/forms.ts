@@ -9,8 +9,7 @@ export const forms = new Hono();
 
 forms.post('/example-submit', async (c) => {
   const { message } = await c.req.json<ExampleFormValues>();
-  const trimmedMessage =
-    typeof message === 'string' ? message.trim() : '';
+  const trimmedMessage = typeof message === 'string' ? message.trim() : '';
 
   return c.json<UiResponse>(
     {
