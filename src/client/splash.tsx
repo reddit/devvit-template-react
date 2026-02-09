@@ -1,4 +1,4 @@
-import '../index.css';
+import './index.css';
 
 import { navigateTo } from '@devvit/web/client';
 import { context, requestExpandedMode } from '@devvit/web/client';
@@ -8,15 +8,21 @@ import { createRoot } from 'react-dom/client';
 export const Splash = () => {
   return (
     <div className="flex relative flex-col justify-center items-center min-h-screen gap-4">
-      <img className="object-contain w-1/2 max-w-[250px] mx-auto" src="/snoo.png" alt="Snoo" />
+      <img
+        className="object-contain w-1/2 max-w-[250px] mx-auto"
+        src="/snoo.png"
+        alt="Snoo"
+      />
       <div className="flex flex-col items-center gap-2">
         <h1 className="text-2xl font-bold text-center text-gray-900 ">
           Hey {context.username ?? 'user'} 👋
         </h1>
         <p className="text-base text-center text-gray-600 ">
           Edit{' '}
-          <span className="bg-[#e5ebee]  px-1 py-0.5 rounded">src/client/splash/splash.tsx</span> to
-          get started.
+          <span className="bg-[#e5ebee]  px-1 py-0.5 rounded">
+            src/client/splash.tsx
+          </span>{' '}
+          to get started.
         </p>
       </div>
       <div className="flex items-center justify-center mt-5">

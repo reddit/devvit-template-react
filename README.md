@@ -5,9 +5,9 @@ A starter to build web applications on Reddit's developer platform
 - [Devvit](https://developers.reddit.com/): A way to build and deploy immersive games on Reddit
 - [Vite](https://vite.dev/): For compiling the webView
 - [React](https://react.dev/): For UI
-- [Express](https://expressjs.com/): For backend logic
+- [Hono](https://hono.dev/): For backend logic
 - [Tailwind](https://tailwindcss.com/): For styles
-- [Typescript](https://www.typescriptlang.org/): For type safety
+- [TypeScript](https://www.typescriptlang.org/): For type safety
 
 ## Getting Started
 
@@ -24,8 +24,4 @@ A starter to build web applications on Reddit's developer platform
 - `npm run deploy`: Uploads a new version of your app
 - `npm run launch`: Publishes your app for review
 - `npm run login`: Logs your CLI into Reddit
-- `npm run check`: Type checks, lints, and prettifies your app
-
-## Cursor Integration
-
-This template comes with a pre-configured cursor environment. To get started, [download cursor](https://www.cursor.com/downloads) and enable the `devvit-mcp` when prompted.
+- `npm run type-check`: Type checks, lints, and prettifies your app

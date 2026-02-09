@@ -17,9 +17,6 @@
     "dir": "dist/server",
     "entry": "index.cjs"
   },
-  "media": {
-    "dir": "assets"
-  },
   "menu": {
     "items": [
       {
@@ -28,10 +25,24 @@
         "location": "subreddit",
         "forUserType": "moderator",
         "endpoint": "/internal/menu/post-create"
+      },
+      {
+        "label": "Example form",
+        "description": "Show a simple form",
+        "location": "subreddit",
+        "forUserType": "moderator",
+        "endpoint": "/internal/menu/example-form"
       }
     ]
   },
+  "forms": {
+    "exampleForm": "/internal/form/example-submit"
+  },
   "triggers": {
-    "onAppInstall": "/internal/on-app-install"
+    "onAppInstall": "/internal/triggers/on-app-install"
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build"
   }
 }

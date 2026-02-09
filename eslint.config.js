@@ -7,37 +7,41 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 
 export default defineConfig([
   tseslint.configs.recommended,
-  { ignores: ['webroot'] },
-  {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
-    files: ['src/devvit/**/*.{ts,tsx}'],
-    languageOptions: {
-      ecmaVersion: 2023,
-      globals: globals.node,
-    },
-  },
-  {
-    extends: [js.configs.recommended, ...tseslint.configs.recommended],
-    files: ['tools/**/*.{ts,tsx,mjs,cjs,js}'],
-    languageOptions: {
-      ecmaVersion: 2023,
-      globals: globals.node,
-    },
-  },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['src/server/**/*.{ts,tsx,mjs,cjs,js}'],
     languageOptions: {
       ecmaVersion: 2023,
       globals: globals.node,
+      parserOptions: {
+        project: ['./tools/tsconfig.server.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
+  {
+    extends: [js.configs.recommended, ...tseslint.configs.recommended],
+    files: ['src/shared/**/*.{ts,tsx,mjs,cjs,js}'],
+    languageOptions: {
+      ecmaVersion: 2023,
+      globals: globals.browser,
+      parserOptions: {
+        project: ['./tools/tsconfig.shared.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
   },
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['src/client/**/*.{ts,tsx}'],
+    ignores: ['src/server/**/*.{ts,tsx}'],
     languageOptions: {
       ecmaVersion: 2023,
       globals: globals.browser,
+      parserOptions: {
+        project: ['./tools/tsconfig.client.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
     },
     plugins: {
       'react-hooks': reactHooks,
@@ -45,7 +49,10 @@ export default defineConfig([
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
-      'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
+      'react-refresh/only-export-components': [
+        'warn',
+        { allowConstantExport: true },
+      ],
     },
   },
   {
@@ -65,7 +72,6 @@ export default defineConfig([
     ],
     languageOptions: {
       parserOptions: {
-        project: ['./tsconfig.json', './src/*/tsconfig.json'],
         tsconfigRootDir: import.meta.dirname,
       },
     },
