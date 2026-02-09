@@ -1,4 +1,4 @@
-import '../index.css';
+import './index.css';
 
 import { navigateTo } from '@devvit/web/client';
 import { context, requestExpandedMode } from '@devvit/web/client';
