@@ -7,3 +7,8 @@ updates:
       interval: "weekly"
       day: "tuesday"
     open-pull-requests-limit: 10 # Optional: prevents PR spam by limiting active updates
+    groups:
+      devvit:
+        patterns:
+          - "devvit"
+          - "@devvit/*"
