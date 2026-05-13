@@ -20,7 +20,7 @@
   "dependencies": {
     "@devvit/start": "0.12.23",
     "@devvit/web": "0.12.23",
-    "@hono/node-server": "^1.19.9",
+    "@hono/node-server": "^2.0.2",
     "devvit": "0.12.23",
     "hono": "4.12.18",
     "react": "19.2.6",
