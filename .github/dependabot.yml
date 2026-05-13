@@ -26,3 +26,9 @@ updates:
         patterns:
           - "tailwindcss"
           - "@tailwindcss/*"
+      react:
+        patterns:
+          - "react"
+          - "react-dom"
+          - "@types/react"
+          - "@types/react-dom"
