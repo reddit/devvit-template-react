@@ -13,3 +13,16 @@ updates:
         patterns:
           - "devvit"
           - "@devvit/*"
+      eslint:
+        patterns:
+          - "eslint"
+          - "@eslint/*"
+          - "typescript-eslint"
+      vite:
+        patterns:
+          - "vite"
+          - "@vitejs/*"
+      tailwind:
+        patterns:
+          - "tailwindcss"
+          - "@tailwindcss/*"
