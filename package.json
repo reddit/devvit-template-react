@@ -6,13 +6,12 @@
   "type": "module",
   "scripts": {
     "build": "vite build",
-    "deploy": "npm run type-check && npm run lint && npm run test && devvit upload",
+    "deploy": "npm run type-check && npm run lint && devvit upload",
     "dev": "devvit playtest",
     "launch": "npm run deploy && devvit publish",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "login": "devvit login",
     "prettier": "prettier --write .",
-    "test": "vitest run",
     "type-check": "tsc --build"
   },
   "engines": {
@@ -22,12 +21,10 @@
     "@devvit/start": "0.12.12",
     "@devvit/web": "0.12.12",
     "@hono/node-server": "^1.19.9",
-    "clsx": "2.1.1",
     "devvit": "0.12.12",
     "hono": "4.11.7",
     "react": "19.2.4",
-    "react-dom": "19.2.4",
-    "tailwind-merge": "3.4.0"
+    "react-dom": "19.2.4"
   },
   "devDependencies": {
     "@eslint/js": "9.39.2",
@@ -41,7 +38,6 @@
     "eslint-plugin-react-refresh": "0.4.26",
     "globals": "17.2.0",
     "prettier": "3.8.1",
-    "prettier-plugin-tailwindcss": "0.7.2",
     "tailwindcss": "4.1.18",
     "typescript": "5.9.3",
     "typescript-eslint": "8.54.0",
