@@ -18,10 +18,10 @@
     "node": ">=22.2.0"
   },
   "dependencies": {
-    "@devvit/start": "0.13.8",
-    "@devvit/web": "0.13.8",
+    "@devvit/start": "0.13.9",
+    "@devvit/web": "0.13.9",
     "@hono/node-server": "2.0.8",
-    "devvit": "0.13.8",
+    "devvit": "0.13.9",
     "hono": "4.12.28",
     "react": "19.2.7",
     "react-dom": "19.2.7"
